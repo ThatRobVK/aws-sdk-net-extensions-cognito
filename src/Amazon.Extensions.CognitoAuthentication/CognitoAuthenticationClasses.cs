@@ -91,6 +91,11 @@ namespace Amazon.Extensions.CognitoAuthentication
         /// The Device Key Group for the device associated with the corresponding CognitoUser
         /// </summary>
         public string DeviceGroupKey { get; set; }
+        
+        /// <summary>
+        /// The client metadata for the current authentication flow.
+        /// </summary>
+        public Dictionary<string, string> ClientMetadata { get; set; }
     }
 
     /// <summary>
